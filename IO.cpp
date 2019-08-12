@@ -44,8 +44,6 @@ void IO::UpdateScreen()
 {
 	SDL_Flip(mScreen);
 }
-
-
 /*
 Keyboard Input
 */

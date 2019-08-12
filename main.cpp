@@ -8,7 +8,7 @@ Main
 */
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
-	// Class for drawing staff
+	// Class for drawing stuff
 	IO mIO;
 	int mScreenHeight = mIO.GetScreenHeight();
 
@@ -40,14 +40,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 					mGame.mPosX++;
 				break;
 			}
-
 			case (SDLK_LEFT):
 			{
 				if (mBoard.IsPossibleMovement(mGame.mPosX - 1, mGame.mPosY, mGame.mPiece, mGame.mRotation))
 					mGame.mPosX--;
 				break;
 			}
-
 			case (SDLK_DOWN):
 			{
 				if (mBoard.IsPossibleMovement(mGame.mPosX, mGame.mPosY + 1, mGame.mPiece, mGame.mRotation))
